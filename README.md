@@ -4,6 +4,10 @@ Este repositório contém minhas anotações pessoais, atividades e exemplos pr�
 
 ## Sumário
 
-1. [Configuração do Ambiente](./02-configuracao-do-ambiente/README.md)
+1. [Porque utilizar um framework web?](./01-porque-utilizar-um-framework-web/README.md)
 
-2. [Estrutura do Framework](./03-estrutura-do-framework/README.md)
+2. [Configuração do Ambiente](./02-configuracao-do-ambiente/README.md)
+
+3. [Estrutura do Framework](./03-estrutura-do-framework/README.md)
+
+4. [Roteamento](./04-roteamento/README.md)
