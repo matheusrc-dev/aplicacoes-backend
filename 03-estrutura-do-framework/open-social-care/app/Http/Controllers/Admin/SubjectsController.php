@@ -27,6 +27,11 @@ class SubjectsController extends Controller
         ]);
     }
 
+    public function create()
+    {
+        return view('admin.subjects.create');
+    }
+
     public function detail(string $id)
     {
         return view('admin.subjects.detail', [
