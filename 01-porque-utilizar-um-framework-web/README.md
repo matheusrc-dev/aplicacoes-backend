@@ -60,3 +60,8 @@ Um framework entrega uma base consistente para iniciar a aplicação. Mas, ele n
 **Leitura recomendada:**
 
 [O que é um framework? - balta.io](https://blog.balta.io/o-que-e-um-framework/)
+
+**Links Úteis**
+
+- Explore o tópico "framework" do github: https://github.com/topics/framework
+- Página oficial do Laravel: https://laravel.com/

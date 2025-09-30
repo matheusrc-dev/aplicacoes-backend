@@ -22,3 +22,11 @@ laravel new example-app
 
 Na intalação utilizar o SQLIte e a opção none. O SQLite é um banco de dados relacional leve, baseado em arquivo. Isso significa que o banco de dados será armazenado dentro da própria pasta do projeto, sem necessidade de instalar servidores externos.
 É ideal para projetos menores, testes locais e protótipos. E dependendo do volume de dados e acessos, ele pode até ser usado em produção com ótimos resultados.
+
+**Links Úteis**
+- Shell alias para o sail (para quem for usar Docker): 
+https://laravel.com/docs/10.x/sail#configuring-a-shell-alias
+- Aula que trata do Laravel com Docker e Docker compose: 
+https://www.youtube.com/watch?v=f4y6KycrHyk
+- Gist com outros procedimentos para Laravel (não usados na videoaula, mas úteis):
+https://gist.github.com/andresjesse/ff25cbb064610efc06295eac1ef8431f 
