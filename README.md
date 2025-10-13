@@ -9,3 +9,4 @@ Este repositório contém minhas anotações pessoais, atividades e exemplos pr�
 3. [Estrutura do Framework](./03-estrutura-do-framework/README.md)
 4. [Roteamento](./04-roteamento/README.md)
 5. [Views com blade](./05-views-com-blade/README.md)
+6. [Estilização com TailwindCSS](./06-tailwindcss/README.md)

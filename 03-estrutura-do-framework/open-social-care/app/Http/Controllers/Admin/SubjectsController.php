@@ -32,6 +32,15 @@ class SubjectsController extends Controller
         return view('admin.subjects.create');
     }
 
+    public function store(Request $request)
+    {
+        if (strlen($request->get("name")) == 0) {
+            return redirect()->back()->with('error', 'Erro ao realizar a operação!');
+        } else {
+            return redirect()->route('admin.subjects.index')->with('success', 'Alteração realizada com sucesso!');
+        }
+    }
+
     public function detail(string $id)
     {
         return view('admin.subjects.detail', [
