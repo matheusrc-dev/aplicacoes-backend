@@ -2,7 +2,7 @@ O Laravel é um bom framework para produção, é muito estável, não quebra de
 
 Ele é um pacote completo, tem suporte a diferentes tipos de bancos de dados, servidores de email, diferentes tipos de front-end, é possível por exemplo se eu quero utilizar vue ou react é muito fácil. E existem outros frameworks que não tem isso incorporado no seu core.
 
-No Laravel existe muita coisa pronta e já tem várias coisas nativas, e não tem chances de quebrar de uma versão para outra, sem necessidade de inserir tecnologias de terceiros. Ecossistemas que precisam importar mutias coisas de outros lugares tem chance maior de quebrar (JavaScript), caso o frameorks seja muito minimalista é muito fácil encher de bibliotecas e aquilo ficar rapidamente defasado.
+No Laravel existe muita coisa pronta e já tem várias coisas nativas, e não tem chances de quebrar de uma versão para outra, sem necessidade de inserir tecnologias de terceiros. Ecossistemas que precisam importar mutias coisas de outros lugares tem chance maior de quebrar (JavaScript), caso o framework seja muito minimalista é muito fácil encher de bibliotecas e aquilo ficar rapidamente defasado.
 
 Quando você atualiza o framework você precisa lembrar de atualizar as bibliotecas que você importou de fora.
 
@@ -16,7 +16,7 @@ Site da documentação do Laravel: https://laravel.com/docs/12.x/structure. É u
 
 ### Projeto de exemplo: Mini Open Social Care
 
-Vamos iniciar construindo uma versão mini do Open Social Care, esse é um sistema voltado para assistentes sociais registrarem atendimentos. A versão completa pode ser acessada no github do professor, nesse repositório: https://github.com/andresjesse/sd-mvp-social-care. Acredito que seja o certo kkkkk.
+Vamos iniciar construindo uma versão mini do Open Social Care, esse é um sistema voltado para assistentes sociais registrarem atendimentos. A versão completa pode ser acessada no github do professor, nesse repositório: https://github.com/andresjesse/sd-mvp-social-care.
 
 Para criar o projeto execute o seguinte comando:
 
@@ -46,11 +46,11 @@ A pasta **app** é onde vão ficar todas as classes e arquivos .php, a maioria d
 O **Laravel** é um framework PHP que segue o padrão de arquitetura **MVC** (*Model-View-Controller*). Ele já fornece uma estrutura organizada e diversas funcionalidades pré-configuradas com base nesse padrão, o que facilita bastante o desenvolvimento. Diferente do **Express** no Node.js, que oferece mais liberdade para organizar o projeto como quiser, o Laravel propõe uma convenção de estrutura e boas práticas desde o início. Por isso, é altamente recomendado seguir essas convenções — só faça alterações significativas se houver uma real necessidade.
 
 ### Estrutura MVC no Laravel
-
+ 
 - **Controllers**
     
     A pasta `app/Http/Controllers` armazena os controladores da aplicação. É lá que criamos as classes responsáveis por processar as requisições, aplicar a lógica de negócio e retornar as respostas adequadas. O Laravel já fornece uma classe base (`Controller.php`) que podemos estender para criar nossos próprios controllers.
-    
+
 - **Models**
     
     Os *models* são representações das tabelas do banco de dados. Eles ficam localizados na pasta `app/Models`. Cada model é uma classe que estende `Illuminate\Database\Eloquent\Model`, o que permite usar os recursos do Eloquent ORM (Object-Relational Mapping) para interagir com o banco de forma orientada a objetos. Por exemplo, podemos criar, ler, atualizar e excluir registros diretamente usando métodos do model, sem precisar escrever SQL manualmente.
