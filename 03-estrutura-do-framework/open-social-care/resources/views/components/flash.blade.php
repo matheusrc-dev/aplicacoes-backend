@@ -1,11 +1,11 @@
 @if (session('success'))
-    <div>
+    <div style="color: green;">
         {{ session('success') }}
     </div>
 @endif
 
 @if (session('error'))
-    <div>
+    <div style="color: red;">
         {{ session('error') }}
     </div>
 @endif

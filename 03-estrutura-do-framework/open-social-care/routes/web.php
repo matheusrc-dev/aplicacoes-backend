@@ -17,7 +17,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/subjects/create', [SubjectsController::class, 'create'])->name('admin.subjects.create');
     Route::get('/subjects/{id}', [SubjectsController::class, 'detail'])->name('admin.subjects.detail');
     Route::get('/subjects/{id}/edit', [SubjectsController::class, 'edit'])->name('admin.subjects.edit');
-    Route::post('/subjects/{id}/edit', [SubjectsController::class, 'update'])->name('admin.subjects.update');
+    Route::post('/subjects/{id}', [SubjectsController::class, 'update'])->name('admin.subjects.update');
 
     Route::get('/appointments', [AppointmentsController::class, 'index'])->name('admin.appointments.index');
     Route::get('/appointments/create', [AppointmentsController::class, 'create'])->name('admin.appointments.create');

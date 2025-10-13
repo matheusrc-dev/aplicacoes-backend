@@ -1,20 +1,24 @@
-<h1>Faça seu Login</h1>
+@extends("layouts.public")
 
-@if (session('error'))
-    <div style="color: red;">
-        {{ session('error') }}
-    </div>
-@endif
+@section("title")
+    Faça seu Login
+@endsection
 
 
-<form action="{{ route('login.authenticate') }}" method="POST">
-    @csrf
+@section('content')
+    <x-flash />
 
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email">
+    <form action="{{ route('login.authenticate') }}" method="POST">
+        @csrf
 
-    <label for="password">Senha</label>
-    <input type="password" name="password" id="password">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
 
-    <button type="submit">Login</button>
-</form>
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password">
+
+        <button type="submit">Login</button>
+    </form>
+@endsection
+
+
