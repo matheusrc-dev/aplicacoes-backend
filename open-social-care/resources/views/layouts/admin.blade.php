@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 @include('shared.head')
 
-<body class="body-font text-gray-600">
-    <div class="container mx-auto flex-col px-5">
+<body class="body-font bg-slate-100 text-gray-600">
+    <x-admin.header />
 
-        <x-admin.header />
+    <section class="container mx-auto bg-slate-100 px-5 md:px-0">
 
-        <h1>@yield('title')</h1>
+        <h1 class="py-4 text-lg font-normal">@yield('title')</h1>
 
         <x-flash />
 
         @yield('content')
-    </div>
+
+    </section>
 </body>
 
 </html>
