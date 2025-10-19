@@ -8,11 +8,19 @@
             <h2 class="title-font mb-4 text-center text-3xl font-medium text-gray-900 sm:text-4xl">
                 {{ env('APP_NAME') }}
             </h2>
-
             <x-flash />
 
-            <form action="{{ route('authenticate') }}" method="POST">
+            <form action="{{ route('store') }}" method="POST">
                 @csrf
+
+                <div class="relative mb-4">
+                    <label for="name" class="text-sm leading-7 text-gray-600">Nome</label>
+                    <input type="text" id="name" name="name" value="{{ old('name') }}"
+                        class="w-full rounded border border-gray-300 bg-white text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200" />
+                    @error('name')
+                        <p class="mb-4 text-sm text-red-500">{{ $message }}</p>
+                    @enderror
+                </div>
 
                 <div class="relative mb-4">
                     <label for="email" class="text-sm leading-7 text-gray-600">Email</label>
@@ -33,14 +41,11 @@
                 </div>
 
                 <button type="submit"
-                    class="w-full cursor-pointer rounded border-0 bg-emerald-500 px-6 py-2 text-lg text-white hover:bg-emerald-600 focus:outline-none">Entrar</button>
-
-                <a href="{{ route('register') }}"
-                    class="mt-4 w-full text-center text-sm text-emerald-500 hover:underline">Criar uma conta</a>
-
+                    class="w-full cursor-pointer rounded border-0 bg-emerald-500 px-6 py-2 text-lg text-white hover:bg-emerald-600 focus:outline-none">Registrar</button>
             </form>
 
+            <a href="{{ route('login') }}"
+                class="mt-4 w-full text-center text-sm text-emerald-500 hover:underline">Já possui uma conta? Entrar</a>
         </div>
-
     </div>
 @endsection

@@ -10,11 +10,11 @@
 
         <p class="mb-8 leading-relaxed">Simplifique a gestão de atendimentos sociais.</p>
         <div class="flex justify-center">
-            <a href="{{ route('admin.subjects.index') }}"
+            <a href="{{ route('login') }}"
                 class="inline-flex cursor-pointer rounded border-0 bg-green-500 px-6 py-2 text-lg text-white hover:bg-green-600 focus:outline-none">
                 Entrar
             </a>
-            <a href="#"
+            <a href="{{ route('register') }}"
                 class="ml-4 inline-flex cursor-pointer rounded border-0 bg-gray-100 px-6 py-2 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
                 Register
             </a>
