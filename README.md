@@ -11,3 +11,4 @@ Este repositório contém minhas anotações pessoais, atividades e exemplos pr�
 5. [Views com blade](./05-views-com-blade/README.md)
 6. [Estilização com TailwindCSS](./06-tailwindcss/README.md)
 7. [Forms e Validações de Requisições](./07-forms-e-validacoes-de-requisicoes/README.md)
+8. [Autenticação de Usuários](./08-autenticacao-de-usuarios/README.md)

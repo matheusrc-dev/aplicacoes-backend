@@ -2,17 +2,18 @@
 
 use App\Http\Controllers\Admin\SubjectsController;
 use App\Http\Controllers\Admin\AppointmentsController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/login', [LoginController::class, 'index'])->name('login.index');
-Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate');
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'authenticate'])->name('authenticate');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/subjects', [SubjectsController::class, 'index'])->name('admin.subjects.index');
     Route::get('/subjects/create', [SubjectsController::class, 'create'])->name('admin.subjects.create');
     Route::post('/subjects', [SubjectsController::class, 'store'])->name('admin.subjects.store');
